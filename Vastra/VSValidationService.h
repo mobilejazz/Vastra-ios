@@ -16,14 +16,14 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MJValidationStrategy.h"
+#import "VSValidationStrategy.h"
 
 /**
  * A validation service contains multiple strategies.
  * The validation service will try to validate an object with each strategy by order. The first strategy that validates or invalidates the object will define the validity of the object.
  * If any strategy succeeds to validate or invalidate the object, the validation will fail and the object will be considered as invalid.
  **/
-@interface MJValidationService : NSObject
+@interface VSValidationService : NSObject
 
 /** *************************************************** **
  * @name Initializers
@@ -34,14 +34,14 @@
  * @param strategies    An array of strategies.
  * @return An initialized instance.
  **/
-+ (nonnull instancetype)serviceWithStrategies:(NSArray <MJValidationStrategy*>  * __nonnull)strategies;
++ (nonnull __kindof VSValidationService*)serviceWithStrategies:(NSArray <__kindof VSValidationStrategy*>  * __nonnull)strategies;
 
 /**
  * Default initializer.
  * @param strategies    An array of strategies.
  * @return The initialized instance.
  **/
-- (nonnull id)initWithStrategies:(NSArray <MJValidationStrategy*>  * __nonnull)strategies;
+- (nonnull id)initWithStrategies:(NSArray <__kindof VSValidationStrategy*>  * __nonnull)strategies;
 
 /** *************************************************** **
  * @name Strategies
@@ -50,7 +50,7 @@
 /**
  * Array of validation strategies.
  **/
-@property (nonatomic, strong, readonly, nonnull) NSArray <MJValidationStrategy*> *strategies;
+@property (nonatomic, strong, readonly, nonnull) NSArray <__kindof VSValidationStrategy*> *strategies;
 
 /** *************************************************** **
  * @name Object validation
@@ -62,6 +62,6 @@
  * @return YES if valid, NO otherwise.
  * @discussion The validation process iterates over the strategies array in order. The first strategy that returns Valid or Invalid will make this method return YES or NO. If all strategies are consumed and none decided, default return value is NO.
  **/
-- (BOOL)isObjectValid:(id <MJValidationStrategyDataSource> __nonnull)object;
+- (BOOL)isObjectValid:(id <VSValidationStrategyDataSource> __nonnull)object;
 
 @end

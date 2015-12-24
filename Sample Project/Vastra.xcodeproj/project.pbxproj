@@ -15,10 +15,11 @@
 		D261A9681C2C151B00D40175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D261A9671C2C151B00D40175 /* Assets.xcassets */; };
 		D261A96B1C2C151B00D40175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D261A9691C2C151B00D40175 /* LaunchScreen.storyboard */; };
 		D261A9761C2C151C00D40175 /* VastraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9751C2C151C00D40175 /* VastraTests.m */; };
-		D261A98B1C2C157D00D40175 /* MJValidationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9821C2C157D00D40175 /* MJValidationService.m */; };
-		D261A98C1C2C157D00D40175 /* MJValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9841C2C157D00D40175 /* MJValidationStrategy.m */; };
-		D261A98D1C2C157D00D40175 /* MJReachabilityValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9871C2C157D00D40175 /* MJReachabilityValidationStrategy.m */; };
-		D261A98E1C2C157D00D40175 /* MJTimestampValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9891C2C157D00D40175 /* MJTimestampValidationStrategy.m */; };
+		D261A98B1C2C157D00D40175 /* VSValidationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9821C2C157D00D40175 /* VSValidationService.m */; };
+		D261A98C1C2C157D00D40175 /* VSValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9841C2C157D00D40175 /* VSValidationStrategy.m */; };
+		D261A98D1C2C157D00D40175 /* VSReachabilityValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9871C2C157D00D40175 /* VSReachabilityValidationStrategy.m */; };
+		D261A98E1C2C157D00D40175 /* VSTimestampValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */; };
+		D261A9931C2C1F5500D40175 /* MJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9921C2C1F5500D40175 /* MJUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +48,16 @@
 		D261A9711C2C151C00D40175 /* VastraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D261A9751C2C151C00D40175 /* VastraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastraTests.m; sourceTree = "<group>"; };
 		D261A9771C2C151C00D40175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D261A9811C2C157D00D40175 /* MJValidationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJValidationService.h; sourceTree = "<group>"; };
-		D261A9821C2C157D00D40175 /* MJValidationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJValidationService.m; sourceTree = "<group>"; };
-		D261A9831C2C157D00D40175 /* MJValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJValidationStrategy.h; sourceTree = "<group>"; };
-		D261A9841C2C157D00D40175 /* MJValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJValidationStrategy.m; sourceTree = "<group>"; };
-		D261A9861C2C157D00D40175 /* MJReachabilityValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJReachabilityValidationStrategy.h; sourceTree = "<group>"; };
-		D261A9871C2C157D00D40175 /* MJReachabilityValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJReachabilityValidationStrategy.m; sourceTree = "<group>"; };
-		D261A9881C2C157D00D40175 /* MJTimestampValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimestampValidationStrategy.h; sourceTree = "<group>"; };
-		D261A9891C2C157D00D40175 /* MJTimestampValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimestampValidationStrategy.m; sourceTree = "<group>"; };
+		D261A9811C2C157D00D40175 /* VSValidationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSValidationService.h; sourceTree = "<group>"; };
+		D261A9821C2C157D00D40175 /* VSValidationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSValidationService.m; sourceTree = "<group>"; };
+		D261A9831C2C157D00D40175 /* VSValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSValidationStrategy.h; sourceTree = "<group>"; };
+		D261A9841C2C157D00D40175 /* VSValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSValidationStrategy.m; sourceTree = "<group>"; };
+		D261A9861C2C157D00D40175 /* VSReachabilityValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSReachabilityValidationStrategy.h; sourceTree = "<group>"; };
+		D261A9871C2C157D00D40175 /* VSReachabilityValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSReachabilityValidationStrategy.m; sourceTree = "<group>"; };
+		D261A9881C2C157D00D40175 /* VSTimestampValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTimestampValidationStrategy.h; sourceTree = "<group>"; };
+		D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTimestampValidationStrategy.m; sourceTree = "<group>"; };
+		D261A9911C2C1F5500D40175 /* MJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJUser.h; path = Model/MJUser.h; sourceTree = "<group>"; };
+		D261A9921C2C1F5500D40175 /* MJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJUser.m; path = Model/MJUser.m; sourceTree = "<group>"; };
 		F014DB9383B707B02D98DFC3 /* libPods-Vastra.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vastra.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +115,7 @@
 				D261A95F1C2C151B00D40175 /* AppDelegate.m */,
 				D261A9611C2C151B00D40175 /* ViewController.h */,
 				D261A9621C2C151B00D40175 /* ViewController.m */,
+				D261A9901C2C1F3B00D40175 /* Model */,
 				D261A9801C2C157D00D40175 /* Vastra */,
 				D261A98F1C2C158F00D40175 /* Resources */,
 				D261A95B1C2C151B00D40175 /* Supporting Files */,
@@ -139,14 +143,14 @@
 		D261A9801C2C157D00D40175 /* Vastra */ = {
 			isa = PBXGroup;
 			children = (
-				D261A9811C2C157D00D40175 /* MJValidationService.h */,
-				D261A9821C2C157D00D40175 /* MJValidationService.m */,
-				D261A9831C2C157D00D40175 /* MJValidationStrategy.h */,
-				D261A9841C2C157D00D40175 /* MJValidationStrategy.m */,
-				D261A9861C2C157D00D40175 /* MJReachabilityValidationStrategy.h */,
-				D261A9871C2C157D00D40175 /* MJReachabilityValidationStrategy.m */,
-				D261A9881C2C157D00D40175 /* MJTimestampValidationStrategy.h */,
-				D261A9891C2C157D00D40175 /* MJTimestampValidationStrategy.m */,
+				D261A9811C2C157D00D40175 /* VSValidationService.h */,
+				D261A9821C2C157D00D40175 /* VSValidationService.m */,
+				D261A9831C2C157D00D40175 /* VSValidationStrategy.h */,
+				D261A9841C2C157D00D40175 /* VSValidationStrategy.m */,
+				D261A9861C2C157D00D40175 /* VSReachabilityValidationStrategy.h */,
+				D261A9871C2C157D00D40175 /* VSReachabilityValidationStrategy.m */,
+				D261A9881C2C157D00D40175 /* VSTimestampValidationStrategy.h */,
+				D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */,
 			);
 			name = Vastra;
 			path = ../../Vastra;
@@ -161,6 +165,15 @@
 				D261A96C1C2C151B00D40175 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D261A9901C2C1F3B00D40175 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D261A9911C2C1F5500D40175 /* MJUser.h */,
+				D261A9921C2C1F5500D40175 /* MJUser.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F020A3A943E10F1290547551 /* Pods */ = {
@@ -323,13 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D261A98B1C2C157D00D40175 /* MJValidationService.m in Sources */,
+				D261A98B1C2C157D00D40175 /* VSValidationService.m in Sources */,
+				D261A9931C2C1F5500D40175 /* MJUser.m in Sources */,
 				D261A9631C2C151B00D40175 /* ViewController.m in Sources */,
-				D261A98D1C2C157D00D40175 /* MJReachabilityValidationStrategy.m in Sources */,
+				D261A98D1C2C157D00D40175 /* VSReachabilityValidationStrategy.m in Sources */,
 				D261A9601C2C151B00D40175 /* AppDelegate.m in Sources */,
-				D261A98E1C2C157D00D40175 /* MJTimestampValidationStrategy.m in Sources */,
+				D261A98E1C2C157D00D40175 /* VSTimestampValidationStrategy.m in Sources */,
 				D261A95D1C2C151B00D40175 /* main.m in Sources */,
-				D261A98C1C2C157D00D40175 /* MJValidationStrategy.m in Sources */,
+				D261A98C1C2C157D00D40175 /* VSValidationStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

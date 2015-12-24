@@ -14,17 +14,17 @@
 // limitations under the License.
 //
 
-#import "MJValidationService.h"
+#import "VSValidationService.h"
 
-@implementation MJValidationService
+@implementation VSValidationService
 
-+ (instancetype)serviceWithStrategies:(NSArray <MJValidationStrategy*> *)strategies
++ (VSValidationService *)serviceWithStrategies:(NSArray<__kindof VSValidationStrategy *> *)strategies
 {
-    MJValidationService *service = [[self alloc] initWithStrategies:strategies];
+    VSValidationService *service = [[self alloc] initWithStrategies:strategies];
     return service;
 }
 
-- (id)initWithStrategies:(NSArray <MJValidationStrategy*> *)strategies;
+- (id)initWithStrategies:(NSArray <VSValidationStrategy*> *)strategies;
 {
     self = [super init];
     if (self)
@@ -34,29 +34,29 @@
     return self;
 }
 
-- (BOOL)isObjectValid:(id <MJValidationStrategyDataSource>)object
+- (BOOL)isObjectValid:(id <VSValidationStrategyDataSource>)object
 {
     if (!object)
         return NO;
     
     __block BOOL isValid = NO;
     
-    [_strategies enumerateObjectsUsingBlock:^(MJValidationStrategy * _Nonnull strategy, NSUInteger idx, BOOL * _Nonnull stop) {
-        MJValidationStrategyResult result = [strategy isObjectValid:object];
+    [_strategies enumerateObjectsUsingBlock:^(VSValidationStrategy * _Nonnull strategy, NSUInteger idx, BOOL * _Nonnull stop) {
+        VSValidationStrategyResult result = [strategy isObjectValid:object];
         
-        if (result == MJValidationStrategyResultValid)
+        if (result == VSValidationStrategyResultValid)
         {
             isValid = YES;
             *stop = YES;
         }
-        else if (result == MJValidationStrategyResultInvalid)
+        else if (result == VSValidationStrategyResultInvalid)
         {
             isValid = NO;
             *stop = YES;
         }
         else
         {
-            // result is MJValidationStrategyResultUnknown
+            // result is VSValidationStrategyResultUnknown
             // lets iterate to next strategy
         }
     }];

@@ -6,12 +6,12 @@
 //  Copyright © 2015 Manish Shah. All rights reserved.
 //
 
-#import "MJValidationStrategy.h"
+#import "VSValidationStrategy.h"
 
 /**
  * Objects that will be validated using the `MJTimestampValidationStrategy` must implement this protocol.
  **/
-@protocol MJTimestampValidationStrategyDataSource <MJValidationStrategyDataSource>
+@protocol VSTimestampValidationStrategyDataSource <VSValidationStrategyDataSource>
 
 @required
 
@@ -37,9 +37,9 @@
  * The strategy will measure the elapsed timeinterval from the `lastUpdate` to the current time.
  *    - If the elapsed timeinterval is smaller than `expiryTimeInterval`: The object will be considered valid.
  *    - If the elapsed timeinterval is greater than or equal to `expiryTimeInterval`: The object will be considered invalid.
- *    - If there is no a `lastUpdate` date, the strategy won't decide object validity (`MJValidationStrategyResultUnknown`).
+ *    - If there is no a `lastUpdate` date, the strategy won't decide object validity (`VSValidationStrategyResultUnknown`).
  **/
-@interface MJTimestampValidationStrategy : MJValidationStrategy
+@interface VSTimestampValidationStrategy : VSValidationStrategy
 
 /** *************************************************** **
  * @name Object validation
@@ -50,6 +50,6 @@
  * @param object The object to test.
  * @return The validation strategy result.
  **/
-- (MJValidationStrategyResult)isObjectValid:(id <MJTimestampValidationStrategyDataSource> __nonnull)object;
+- (VSValidationStrategyResult)isObjectValid:(id <VSTimestampValidationStrategyDataSource> __nonnull)object;
 
 @end

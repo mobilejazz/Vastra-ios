@@ -6,27 +6,27 @@
 //  Copyright © 2015 Manish Shah. All rights reserved.
 //
 
-#import "MJTimestampValidationStrategy.h"
+#import "VSTimestampValidationStrategy.h"
 
-@implementation MJTimestampValidationStrategy
+@implementation VSTimestampValidationStrategy
 
-- (MJValidationStrategyResult)isObjectValid:(id <MJTimestampValidationStrategyDataSource>)object
+- (VSValidationStrategyResult)isObjectValid:(id <VSTimestampValidationStrategyDataSource>)object
 {
     NSDate *lastUpdate = [object lastUpdate];
     NSTimeInterval expiryTimeInterval = [object expiryTimeInterval];
     
     // If not last update available, we cannot decide
     if (!lastUpdate)
-        return MJValidationStrategyResultUnknown;
+        return VSValidationStrategyResultUnknown;
     
     NSDate *date = [NSDate date];
     
-    NSTimeInterval diff = [lastUpdate timeIntervalSinceDate:date];
+    NSTimeInterval diff = [date timeIntervalSinceDate:lastUpdate];
     
     if (diff < expiryTimeInterval)
-        return MJValidationStrategyResultValid;
+        return VSValidationStrategyResultValid;
 
-    return MJValidationStrategyResultInvalid;
+    return VSValidationStrategyResultInvalid;
 }
 
 @end

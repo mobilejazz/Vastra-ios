@@ -6,11 +6,11 @@
 //  Copyright © 2015 Manish Shah. All rights reserved.
 //
 
-#import "MJReachabilityValidationStrategy.h"
+#import "VSReachabilityValidationStrategy.h"
 
 #import <Reachability/Reachability.h>
 
-@implementation MJReachabilityValidationStrategy
+@implementation VSReachabilityValidationStrategy
 {
     Reachability *_reachability;
     
@@ -29,7 +29,7 @@
         
         // is passed in the object parameter
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(pw_reachabilityChanged:)
+                                                 selector:@selector(vs_reachabilityChanged:)
                                                      name:kReachabilityChangedNotification
                                                    object:nil];
 
@@ -45,18 +45,18 @@
                                                   object:_reachability];
 }
 
-- (MJValidationStrategyResult)isObjectValid:(id<MJValidationStrategyDataSource>)object
+- (VSValidationStrategyResult)isObjectValid:(id<VSValidationStrategyDataSource>)object
 {
     if (![_reachability isReachable] && _serviceAvailable)
     {
         // If not reachable, cache is valid
-        return MJValidationStrategyResultValid;
+        return VSValidationStrategyResultValid;
     }
     
-    return MJValidationStrategyResultUnknown;
+    return VSValidationStrategyResultUnknown;
 }
 
-- (void)pw_reachabilityChanged:(NSNotification*)notification
+- (void)vs_reachabilityChanged:(NSNotification*)notification
 {
     _serviceAvailable = YES;
 }

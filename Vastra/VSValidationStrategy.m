@@ -14,13 +14,13 @@
 // limitations under the License.
 //
 
-#import "MJValidationStrategy.h"
+#import "VSValidationStrategy.h"
 
-@implementation MJValidationStrategy
+@implementation VSValidationStrategy
 
-- (MJValidationStrategyResult)isObjectValid:(id <MJValidationStrategyDataSource>)object
+- (VSValidationStrategyResult)isObjectValid:(id <VSValidationStrategyDataSource>)object
 {
-    return MJValidationStrategyResultValid;
+    return VSValidationStrategyResultValid;
 }
 
 @end

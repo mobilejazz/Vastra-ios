@@ -6,17 +6,17 @@
 //  Copyright © 2015 Manish Shah. All rights reserved.
 //
 
-#import "MJValidationStrategy.h"
+#import "VSValidationStrategy.h"
 
 /**
  * Reachability validation strategy.
  *
  * The strategy implements the following approach:
  *
- *    - If internet is NOT available: the strategy considers all objects valid (`MJValidationStrategyResultValid`).
- *    - If internet is available: the strategy doesn't decide if the object is valid (`MJValidationStrategyResultUnknown`).
+ *    - If internet is NOT available: the strategy considers all objects valid (`VSValidationStrategyResultValid`).
+ *    - If internet is available: the strategy doesn't decide if the object is valid (`VSValidationStrategyResultUnknown`).
  **/
-@interface MJReachabilityValidationStrategy : MJValidationStrategy
+@interface VSReachabilityValidationStrategy : VSValidationStrategy
 
 /** *************************************************** **
  * @name Initializers
