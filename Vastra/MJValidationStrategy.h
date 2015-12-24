@@ -16,24 +16,42 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MJValidationStrategyDataSource.h"
-
+/**
+ * A `MJValidationStrategyResult` specifies the validity of an object.
+ **/
 typedef NS_ENUM(NSUInteger, MJValidationStrategyResult)
 {
+    /** Strategy cannot decide if valid or invalid. **/
     MJValidationStrategyResultUnknown,
+    
+    /** Strategy decides the object is valid. **/
     MJValidationStrategyResultValid,
+    
+    /** Strategy decides the object is invalid. **/
     MJValidationStrategyResultInvalid,
 };
+
+/**
+ * `MJValidationStrategy` subclasses will have to declare its own data sources protocols which will heritate from this protocol.
+ **/
+@protocol MJValidationStrategyDataSource <NSObject>
+
+@end
 
 /**
  * A validation strategy. Create subclasses to implement customized strategies.
  **/
 @interface MJValidationStrategy : NSObject
 
+/** *************************************************** **
+ * @name Object validation
+ ** *************************************************** **/
+
 /**
  * Strategy validation method.
  * @param object The object to test.
- * @return The strategy
+ * @return The validation strategy result.
+ * @discussion Subclasses must override this method and implement custom validation.
  **/
 - (MJValidationStrategyResult)isObjectValid:(id <MJValidationStrategyDataSource>)object;
 

@@ -22,6 +22,8 @@
     self = [super init];
     if (self)
     {
+        _host = host;
+        
         _reachability = [Reachability reachabilityWithHostname:host];
         [_reachability startNotifier];
         
