@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		591DFE97FCCC19D883C93764 /* libPods-Vastra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F014DB9383B707B02D98DFC3 /* libPods-Vastra.a */; };
+		BBCE2A1F29C3EF577C4E15B3 /* libPods-VastraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AE0B67D12ECAED3C9C4C22 /* libPods-VastraTests.a */; };
 		D261A95D1C2C151B00D40175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A95C1C2C151B00D40175 /* main.m */; };
 		D261A9601C2C151B00D40175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A95F1C2C151B00D40175 /* AppDelegate.m */; };
 		D261A9631C2C151B00D40175 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9621C2C151B00D40175 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* Begin PBXFileReference section */
 		0A929B81E755886B9B30CE67 /* Pods-Vastra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vastra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vastra/Pods-Vastra.debug.xcconfig"; sourceTree = "<group>"; };
 		77FCB4E5D2AE31803CDB1AB5 /* Pods-Vastra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vastra.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vastra/Pods-Vastra.release.xcconfig"; sourceTree = "<group>"; };
+		79AE0B67D12ECAED3C9C4C22 /* libPods-VastraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VastraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFDBEF4C7B5EBA38627E765 /* Pods-VastraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VastraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VastraTests/Pods-VastraTests.release.xcconfig"; sourceTree = "<group>"; };
+		B334D30C5591EDA057895994 /* Pods-VastraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VastraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VastraTests/Pods-VastraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D261A9581C2C151B00D40175 /* Vastra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vastra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D261A95C1C2C151B00D40175 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D261A95E1C2C151B00D40175 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTimestampValidationStrategy.m; sourceTree = "<group>"; };
 		D261A9911C2C1F5500D40175 /* MJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJUser.h; path = Model/MJUser.h; sourceTree = "<group>"; };
 		D261A9921C2C1F5500D40175 /* MJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJUser.m; path = Model/MJUser.m; sourceTree = "<group>"; };
+		D261A9941C2C2A1600D40175 /* Vastra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vastra.h; sourceTree = "<group>"; };
 		F014DB9383B707B02D98DFC3 /* libPods-Vastra.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vastra.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCE2A1F29C3EF577C4E15B3 /* libPods-VastraTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F014DB9383B707B02D98DFC3 /* libPods-Vastra.a */,
+				79AE0B67D12ECAED3C9C4C22 /* libPods-VastraTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 		D261A9801C2C157D00D40175 /* Vastra */ = {
 			isa = PBXGroup;
 			children = (
+				D261A9941C2C2A1600D40175 /* Vastra.h */,
 				D261A9811C2C157D00D40175 /* VSValidationService.h */,
 				D261A9821C2C157D00D40175 /* VSValidationService.m */,
 				D261A9831C2C157D00D40175 /* VSValidationStrategy.h */,
@@ -181,6 +189,8 @@
 			children = (
 				0A929B81E755886B9B30CE67 /* Pods-Vastra.debug.xcconfig */,
 				77FCB4E5D2AE31803CDB1AB5 /* Pods-Vastra.release.xcconfig */,
+				B334D30C5591EDA057895994 /* Pods-VastraTests.debug.xcconfig */,
+				9CFDBEF4C7B5EBA38627E765 /* Pods-VastraTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -212,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D261A97D1C2C151C00D40175 /* Build configuration list for PBXNativeTarget "VastraTests" */;
 			buildPhases = (
+				EF1EC84E5E86783A3329FD99 /* Check Pods Manifest.lock */,
 				D261A96D1C2C151C00D40175 /* Sources */,
 				D261A96E1C2C151C00D40175 /* Frameworks */,
 				D261A96F1C2C151C00D40175 /* Resources */,
+				56388884F36CBC7BB4CC4D92 /* Embed Pods Frameworks */,
+				63B60C7C8F274A78ACE95349 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +297,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		56388884F36CBC7BB4CC4D92 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VastraTests/Pods-VastraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B60C7C8F274A78ACE95349 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VastraTests/Pods-VastraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6D347FFC28A69FCD200F646F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +358,21 @@
 			showEnvVarsInLog = 0;
 		};
 		7DFAA07F659A49964C95DF73 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1EC84E5E86783A3329FD99 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,6 +549,7 @@
 		};
 		D261A97E1C2C151C00D40175 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B334D30C5591EDA057895994 /* Pods-VastraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VastraTests/Info.plist;
@@ -503,6 +562,7 @@
 		};
 		D261A97F1C2C151C00D40175 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFDBEF4C7B5EBA38627E765 /* Pods-VastraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = VastraTests/Info.plist;

@@ -8,6 +8,6 @@ target 'Vastra' do
 end
 
 target 'VastraTests' do
-
+    pod 'Reachability', '~> 3.2'
 end
 
