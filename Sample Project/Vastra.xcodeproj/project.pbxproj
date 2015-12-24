@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D261A95D1C2C151B00D40175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A95C1C2C151B00D40175 /* main.m */; };
+		D261A9601C2C151B00D40175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A95F1C2C151B00D40175 /* AppDelegate.m */; };
+		D261A9631C2C151B00D40175 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9621C2C151B00D40175 /* ViewController.m */; };
+		D261A9661C2C151B00D40175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D261A9641C2C151B00D40175 /* Main.storyboard */; };
+		D261A9681C2C151B00D40175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D261A9671C2C151B00D40175 /* Assets.xcassets */; };
+		D261A96B1C2C151B00D40175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D261A9691C2C151B00D40175 /* LaunchScreen.storyboard */; };
+		D261A9761C2C151C00D40175 /* VastraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9751C2C151C00D40175 /* VastraTests.m */; };
+		D261A98B1C2C157D00D40175 /* MJValidationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9821C2C157D00D40175 /* MJValidationService.m */; };
+		D261A98C1C2C157D00D40175 /* MJValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9841C2C157D00D40175 /* MJValidationStrategy.m */; };
+		D261A98D1C2C157D00D40175 /* MJReachabilityValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9871C2C157D00D40175 /* MJReachabilityValidationStrategy.m */; };
+		D261A98E1C2C157D00D40175 /* MJTimestampValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9891C2C157D00D40175 /* MJTimestampValidationStrategy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D261A9721C2C151C00D40175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D261A9501C2C151B00D40175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D261A9571C2C151B00D40175;
+			remoteInfo = Vastra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D261A9581C2C151B00D40175 /* Vastra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vastra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261A95C1C2C151B00D40175 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D261A95E1C2C151B00D40175 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D261A95F1C2C151B00D40175 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D261A9611C2C151B00D40175 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D261A9621C2C151B00D40175 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D261A9651C2C151B00D40175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D261A9671C2C151B00D40175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D261A96A1C2C151B00D40175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D261A96C1C2C151B00D40175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D261A9711C2C151C00D40175 /* VastraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261A9751C2C151C00D40175 /* VastraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastraTests.m; sourceTree = "<group>"; };
+		D261A9771C2C151C00D40175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D261A9811C2C157D00D40175 /* MJValidationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJValidationService.h; sourceTree = "<group>"; };
+		D261A9821C2C157D00D40175 /* MJValidationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJValidationService.m; sourceTree = "<group>"; };
+		D261A9831C2C157D00D40175 /* MJValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJValidationStrategy.h; sourceTree = "<group>"; };
+		D261A9841C2C157D00D40175 /* MJValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJValidationStrategy.m; sourceTree = "<group>"; };
+		D261A9851C2C157D00D40175 /* MJValidationStrategyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJValidationStrategyDataSource.h; sourceTree = "<group>"; };
+		D261A9861C2C157D00D40175 /* MJReachabilityValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJReachabilityValidationStrategy.h; sourceTree = "<group>"; };
+		D261A9871C2C157D00D40175 /* MJReachabilityValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJReachabilityValidationStrategy.m; sourceTree = "<group>"; };
+		D261A9881C2C157D00D40175 /* MJTimestampValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTimestampValidationStrategy.h; sourceTree = "<group>"; };
+		D261A9891C2C157D00D40175 /* MJTimestampValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTimestampValidationStrategy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D261A9551C2C151B00D40175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261A96E1C2C151C00D40175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D261A94F1C2C151B00D40175 = {
+			isa = PBXGroup;
+			children = (
+				D261A95A1C2C151B00D40175 /* Vastra */,
+				D261A9741C2C151C00D40175 /* VastraTests */,
+				D261A9591C2C151B00D40175 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D261A9591C2C151B00D40175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D261A9581C2C151B00D40175 /* Vastra.app */,
+				D261A9711C2C151C00D40175 /* VastraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D261A95A1C2C151B00D40175 /* Vastra */ = {
+			isa = PBXGroup;
+			children = (
+				D261A95E1C2C151B00D40175 /* AppDelegate.h */,
+				D261A95F1C2C151B00D40175 /* AppDelegate.m */,
+				D261A9611C2C151B00D40175 /* ViewController.h */,
+				D261A9621C2C151B00D40175 /* ViewController.m */,
+				D261A9801C2C157D00D40175 /* Vastra */,
+				D261A98F1C2C158F00D40175 /* Resources */,
+				D261A95B1C2C151B00D40175 /* Supporting Files */,
+			);
+			path = Vastra;
+			sourceTree = "<group>";
+		};
+		D261A95B1C2C151B00D40175 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D261A95C1C2C151B00D40175 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D261A9741C2C151C00D40175 /* VastraTests */ = {
+			isa = PBXGroup;
+			children = (
+				D261A9751C2C151C00D40175 /* VastraTests.m */,
+				D261A9771C2C151C00D40175 /* Info.plist */,
+			);
+			path = VastraTests;
+			sourceTree = "<group>";
+		};
+		D261A9801C2C157D00D40175 /* Vastra */ = {
+			isa = PBXGroup;
+			children = (
+				D261A9811C2C157D00D40175 /* MJValidationService.h */,
+				D261A9821C2C157D00D40175 /* MJValidationService.m */,
+				D261A9831C2C157D00D40175 /* MJValidationStrategy.h */,
+				D261A9841C2C157D00D40175 /* MJValidationStrategy.m */,
+				D261A9851C2C157D00D40175 /* MJValidationStrategyDataSource.h */,
+				D261A9861C2C157D00D40175 /* MJReachabilityValidationStrategy.h */,
+				D261A9871C2C157D00D40175 /* MJReachabilityValidationStrategy.m */,
+				D261A9881C2C157D00D40175 /* MJTimestampValidationStrategy.h */,
+				D261A9891C2C157D00D40175 /* MJTimestampValidationStrategy.m */,
+			);
+			name = Vastra;
+			path = ../../Vastra;
+			sourceTree = "<group>";
+		};
+		D261A98F1C2C158F00D40175 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D261A9641C2C151B00D40175 /* Main.storyboard */,
+				D261A9671C2C151B00D40175 /* Assets.xcassets */,
+				D261A9691C2C151B00D40175 /* LaunchScreen.storyboard */,
+				D261A96C1C2C151B00D40175 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D261A9571C2C151B00D40175 /* Vastra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D261A97A1C2C151C00D40175 /* Build configuration list for PBXNativeTarget "Vastra" */;
+			buildPhases = (
+				D261A9541C2C151B00D40175 /* Sources */,
+				D261A9551C2C151B00D40175 /* Frameworks */,
+				D261A9561C2C151B00D40175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vastra;
+			productName = Vastra;
+			productReference = D261A9581C2C151B00D40175 /* Vastra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D261A9701C2C151C00D40175 /* VastraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D261A97D1C2C151C00D40175 /* Build configuration list for PBXNativeTarget "VastraTests" */;
+			buildPhases = (
+				D261A96D1C2C151C00D40175 /* Sources */,
+				D261A96E1C2C151C00D40175 /* Frameworks */,
+				D261A96F1C2C151C00D40175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D261A9731C2C151C00D40175 /* PBXTargetDependency */,
+			);
+			name = VastraTests;
+			productName = VastraTests;
+			productReference = D261A9711C2C151C00D40175 /* VastraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D261A9501C2C151B00D40175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Mobile Jazz";
+				TargetAttributes = {
+					D261A9571C2C151B00D40175 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D261A9701C2C151C00D40175 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D261A9571C2C151B00D40175;
+					};
+				};
+			};
+			buildConfigurationList = D261A9531C2C151B00D40175 /* Build configuration list for PBXProject "Vastra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D261A94F1C2C151B00D40175;
+			productRefGroup = D261A9591C2C151B00D40175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D261A9571C2C151B00D40175 /* Vastra */,
+				D261A9701C2C151C00D40175 /* VastraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D261A9561C2C151B00D40175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261A96B1C2C151B00D40175 /* LaunchScreen.storyboard in Resources */,
+				D261A9681C2C151B00D40175 /* Assets.xcassets in Resources */,
+				D261A9661C2C151B00D40175 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261A96F1C2C151C00D40175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D261A9541C2C151B00D40175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261A98B1C2C157D00D40175 /* MJValidationService.m in Sources */,
+				D261A9631C2C151B00D40175 /* ViewController.m in Sources */,
+				D261A98D1C2C157D00D40175 /* MJReachabilityValidationStrategy.m in Sources */,
+				D261A9601C2C151B00D40175 /* AppDelegate.m in Sources */,
+				D261A98E1C2C157D00D40175 /* MJTimestampValidationStrategy.m in Sources */,
+				D261A95D1C2C151B00D40175 /* main.m in Sources */,
+				D261A98C1C2C157D00D40175 /* MJValidationStrategy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D261A96D1C2C151C00D40175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D261A9761C2C151C00D40175 /* VastraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D261A9731C2C151C00D40175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D261A9571C2C151B00D40175 /* Vastra */;
+			targetProxy = D261A9721C2C151C00D40175 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D261A9641C2C151B00D40175 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D261A9651C2C151B00D40175 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D261A9691C2C151B00D40175 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D261A96A1C2C151B00D40175 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D261A9781C2C151C00D40175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D261A9791C2C151C00D40175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D261A97B1C2C151C00D40175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vastra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilejazz.Vastra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D261A97C1C2C151C00D40175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vastra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilejazz.Vastra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D261A97E1C2C151C00D40175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VastraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilejazz.VastraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vastra.app/Vastra";
+			};
+			name = Debug;
+		};
+		D261A97F1C2C151C00D40175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VastraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobilejazz.VastraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vastra.app/Vastra";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D261A9531C2C151B00D40175 /* Build configuration list for PBXProject "Vastra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261A9781C2C151C00D40175 /* Debug */,
+				D261A9791C2C151C00D40175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D261A97A1C2C151C00D40175 /* Build configuration list for PBXNativeTarget "Vastra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261A97B1C2C151C00D40175 /* Debug */,
+				D261A97C1C2C151C00D40175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D261A97D1C2C151C00D40175 /* Build configuration list for PBXNativeTarget "VastraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D261A97E1C2C151C00D40175 /* Debug */,
+				D261A97F1C2C151C00D40175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D261A9501C2C151B00D40175 /* Project object */;
+}
