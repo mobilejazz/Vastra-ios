@@ -1,6 +1,5 @@
 [![Version](https://cocoapod-badges.herokuapp.com/v/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra) 
 [![Platform](https://cocoapod-badges.herokuapp.com/p/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra) 
-[![Build Status](https://travis-ci.org/mobilejazz/Vastra.png)](https://travis-ci.org/mobilejazz/Vastra)
 [![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Vastra) 
 
 Vastra
