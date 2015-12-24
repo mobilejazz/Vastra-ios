@@ -18,7 +18,7 @@
 
 @implementation MJValidationService
 
-+ (MJValidationService*)serviceWithStrategies:(NSArray <MJValidationStrategy*> *)strategies
++ (instancetype)serviceWithStrategies:(NSArray <MJValidationStrategy*> *)strategies
 {
     MJValidationService *service = [[self alloc] initWithStrategies:strategies];
     return service;
@@ -39,7 +39,6 @@
     if (!object)
         return NO;
     
-    // Default value set to NO.
     __block BOOL isValid = NO;
     
     [_strategies enumerateObjectsUsingBlock:^(MJValidationStrategy * _Nonnull strategy, NSUInteger idx, BOOL * _Nonnull stop) {

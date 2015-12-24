@@ -53,6 +53,6 @@ typedef NS_ENUM(NSUInteger, MJValidationStrategyResult)
  * @return The validation strategy result.
  * @discussion Subclasses must override this method and implement custom validation.
  **/
-- (MJValidationStrategyResult)isObjectValid:(id <MJValidationStrategyDataSource>)object;
+- (MJValidationStrategyResult)isObjectValid:(id <MJValidationStrategyDataSource> __nonnull)object;
 
 @end

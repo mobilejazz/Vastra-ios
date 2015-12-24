@@ -22,7 +22,7 @@
 /**
  * The last update date.
  **/
-- (NSDate*)lastUpdate;
+- (nullable NSDate*)lastUpdate;
 
 /**
  * The expiry time interval.
@@ -50,6 +50,6 @@
  * @param object The object to test.
  * @return The validation strategy result.
  **/
-- (MJValidationStrategyResult)isObjectValid:(id <MJTimestampValidationStrategyDataSource>)object;
+- (MJValidationStrategyResult)isObjectValid:(id <MJTimestampValidationStrategyDataSource> __nonnull)object;
 
 @end

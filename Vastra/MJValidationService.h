@@ -34,14 +34,14 @@
  * @param strategies    An array of strategies.
  * @return An initialized instance.
  **/
-+ ( MJValidationService* _Nonnull)serviceWithStrategies:(NSArray <MJValidationStrategy*>  * _Nonnull)strategies;
++ (nonnull instancetype)serviceWithStrategies:(NSArray <MJValidationStrategy*>  * __nonnull)strategies;
 
 /**
  * Default initializer.
  * @param strategies    An array of strategies.
  * @return The initialized instance.
  **/
-- (_Nonnull id)initWithStrategies:(NSArray <MJValidationStrategy*>  * _Nonnull )strategies;
+- (nonnull id)initWithStrategies:(NSArray <MJValidationStrategy*>  * __nonnull)strategies;
 
 /** *************************************************** **
  * @name Strategies
@@ -62,6 +62,6 @@
  * @return YES if valid, NO otherwise.
  * @discussion The validation process iterates over the strategies array in order. The first strategy that returns Valid or Invalid will make this method return YES or NO. If all strategies are consumed and none decided, default return value is NO.
  **/
-- (BOOL)isObjectValid:(id <MJValidationStrategyDataSource> _Nonnull)object;
+- (BOOL)isObjectValid:(id <MJValidationStrategyDataSource> __nonnull)object;
 
 @end
