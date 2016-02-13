@@ -8,7 +8,7 @@ Vastra
 Vastra is a library that helps to validate objects applying different strategy validations.
 
 ## Installation
-The easiest way to add Vastra to your project is using Cocoa Pods. Add the following line to your Podfile:
+The easiest way to add Vastra to your project is using CocoaPods. Add the following line to your Podfile:
 ```
   pod 'Vastra', '~> 1.0'
 ```
