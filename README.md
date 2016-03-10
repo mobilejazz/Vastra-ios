@@ -2,17 +2,19 @@
 [![Platform](https://cocoapod-badges.herokuapp.com/p/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra) 
 [![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Vastra) 
 
-Vastra
-====
+![Mobile Jazz Vastra](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-vastra-banner.png)
 
-Vastra is a library that helps to validate objects applying different strategy validations.
+#Vastra
 
-## Installation
-The easiest way to add Vastra to your project is using CocoaPods. Add the following line to your Podfile:
+**Vastra** is a library that helps to validate objects applying different strategy validations.
+
+## How To Get Vastra
+
+The easiest way to add **Vastra** to your project is using CocoaPods. Add the following line to your Podfile:
 ```
   pod 'Vastra', '~> 1.0'
 ```
-## How To
+## Using Vastra
 
 ### Creating strategies
 Create the strategy instances that you want to validate your objects:
@@ -94,16 +96,19 @@ else
 
 Assuming we have a valid internet connection, this user would pass the validation test. However, if we run this code 5 seconds later, this same user would fail validation as the timestamp strategy would invalidate it.
 
-License
----
+## Project Maintainer
 
-    Copyright 2015 Mobile Jazz SL
+This open source project is maintained by [Joan Martin](https://github.com/vilanovi).
+
+## License
+
+    Copyright 2016 MobileJazz
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+      http://www.apache.org/licenses/LICENSE-2.0
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
