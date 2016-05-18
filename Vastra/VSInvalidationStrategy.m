@@ -1,5 +1,5 @@
 //
-// Copyright 2015 Mobile Jazz SL
+// Copyright 2016 Mobile Jazz SL
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,9 +14,16 @@
 // limitations under the License.
 //
 
-#import "VSValidationStrategy.h"
-#import "VSValidationService.h"
-
-#import "VSReachabilityValidationStrategy.h"
 #import "VSInvalidationStrategy.h"
-#import "VSTimestampValidationStrategy.h"
+
+@implementation VSInvalidationStrategy
+
+- (VSValidationStrategyResult)isObjectValid:(id <VSInvalidationStrategyDataSource> __nonnull)object
+{
+    if ([object isObjectInvalid])
+        return VSValidationStrategyResultInvalid;
+    
+    return VSValidationStrategyResultUnknown;
+}
+
+@end

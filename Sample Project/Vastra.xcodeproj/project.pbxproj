@@ -21,6 +21,7 @@
 		D261A98D1C2C157D00D40175 /* VSReachabilityValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9871C2C157D00D40175 /* VSReachabilityValidationStrategy.m */; };
 		D261A98E1C2C157D00D40175 /* VSTimestampValidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */; };
 		D261A9931C2C1F5500D40175 /* MJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D261A9921C2C1F5500D40175 /* MJUser.m */; };
+		D2F3C9B41CECC20E0048FEBA /* VSInvalidationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F3C9B31CECC20E0048FEBA /* VSInvalidationStrategy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		D261A9911C2C1F5500D40175 /* MJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJUser.h; path = Model/MJUser.h; sourceTree = "<group>"; };
 		D261A9921C2C1F5500D40175 /* MJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJUser.m; path = Model/MJUser.m; sourceTree = "<group>"; };
 		D261A9941C2C2A1600D40175 /* Vastra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vastra.h; sourceTree = "<group>"; };
+		D2F3C9B21CECC20E0048FEBA /* VSInvalidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSInvalidationStrategy.h; sourceTree = "<group>"; };
+		D2F3C9B31CECC20E0048FEBA /* VSInvalidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSInvalidationStrategy.m; sourceTree = "<group>"; };
 		F014DB9383B707B02D98DFC3 /* libPods-Vastra.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vastra.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +160,8 @@
 				D261A9841C2C157D00D40175 /* VSValidationStrategy.m */,
 				D261A9861C2C157D00D40175 /* VSReachabilityValidationStrategy.h */,
 				D261A9871C2C157D00D40175 /* VSReachabilityValidationStrategy.m */,
+				D2F3C9B21CECC20E0048FEBA /* VSInvalidationStrategy.h */,
+				D2F3C9B31CECC20E0048FEBA /* VSInvalidationStrategy.m */,
 				D261A9881C2C157D00D40175 /* VSTimestampValidationStrategy.h */,
 				D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */,
 			);
@@ -401,6 +406,7 @@
 				D261A9601C2C151B00D40175 /* AppDelegate.m in Sources */,
 				D261A98E1C2C157D00D40175 /* VSTimestampValidationStrategy.m in Sources */,
 				D261A95D1C2C151B00D40175 /* main.m in Sources */,
+				D2F3C9B41CECC20E0048FEBA /* VSInvalidationStrategy.m in Sources */,
 				D261A98C1C2C157D00D40175 /* VSValidationStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
