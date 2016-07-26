@@ -18,11 +18,11 @@
 
 @implementation VSReachabilityValidationStrategy
 {
-    id <VSReachabilityProtocol> _reachability;
+    id <VSReachability> _reachability;
 }
 
 
-- (id)initWithReachability:(id<VSReachabilityProtocol>)reachability
+- (id)initWithReachability:(id<VSReachability>)reachability
 {
     self = [super init];
     if (self)

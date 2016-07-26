@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VSReachabilityProtocol.h"
+#import "VSReachability.h"
 
-@interface DummyReachability : NSObject<VSReachabilityProtocol>
+@interface DummyReachability : NSObject<VSReachability>
 
 @end

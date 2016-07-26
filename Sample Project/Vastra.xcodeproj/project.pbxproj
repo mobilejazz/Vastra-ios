@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		5294DB771D476F1600C65291 /* VSReachabilityValidationStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSReachabilityValidationStrategy.h; sourceTree = "<group>"; };
 		5294DB781D476F1600C65291 /* VSReachabilityValidationStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSReachabilityValidationStrategy.m; sourceTree = "<group>"; };
-		5294DB7A1D476F1D00C65291 /* VSReachabilityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSReachabilityProtocol.h; sourceTree = "<group>"; };
+		5294DB7A1D476F1D00C65291 /* VSReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSReachability.h; sourceTree = "<group>"; };
 		5294DB7B1D476F9300C65291 /* DummyReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyReachability.h; sourceTree = "<group>"; };
 		5294DB7C1D476F9300C65291 /* DummyReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyReachability.m; sourceTree = "<group>"; };
 		55EFA73AB1127A37D734C6F3 /* libPods-VastraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VastraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +152,7 @@
 		D261A9801C2C157D00D40175 /* Vastra */ = {
 			isa = PBXGroup;
 			children = (
-				5294DB7A1D476F1D00C65291 /* VSReachabilityProtocol.h */,
+				5294DB7A1D476F1D00C65291 /* VSReachability.h */,
 				D261A9941C2C2A1600D40175 /* Vastra.h */,
 				D261A9811C2C157D00D40175 /* VSValidationService.h */,
 				D261A9821C2C157D00D40175 /* VSValidationService.m */,

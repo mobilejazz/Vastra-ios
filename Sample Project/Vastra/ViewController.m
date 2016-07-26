@@ -30,7 +30,7 @@
     
     VSValidationStrategy *defaultStrategy = [[VSValidationStrategy alloc] init];
     VSValidationStrategy *timestampStrategy = [[VSTimestampValidationStrategy alloc] init];
-    VSValidationStrategy *reachabilityStrategy = [[VSReachabilityValidationStrategy alloc] initWithReachabilityProtocol:[[DummyReachability alloc] init]];
+    VSValidationStrategy *reachabilityStrategy = [[VSReachabilityValidationStrategy alloc] initWithReachability:[[DummyReachability alloc] init]];
     
     VSValidationService *validationService = [[VSValidationService alloc] initWithStrategies:@[reachabilityStrategy,
                                                                                                timestampStrategy,
