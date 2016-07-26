@@ -36,15 +36,6 @@
  * @param host The host to use to check if reachable.
  * @return The initialized instance.
  **/
-- (nonnull id)initWithReachabilityProtocol:(id<VSReachabilityProtocol>)reachabilityProtocol;
-
-/** *************************************************** **
- * @name Properties
- ** *************************************************** **/
-
-/**
- * The host to use to check if reachable.
- **/
-@property (nonatomic, strong, readonly, nonnull) NSString *host;
+- (id)initWithReachability:(id<VSReachabilityProtocol>)reachability;
 
 @end

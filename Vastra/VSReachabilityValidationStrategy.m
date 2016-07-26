@@ -21,16 +21,16 @@
     id <VSReachabilityProtocol> _reachability;
 }
 
-- (id)initWithReachabilityProtocol:(id <VSReachabilityProtocol>)reachabilityProtocol
+
+- (id)initWithReachability:(id<VSReachabilityProtocol>)reachability
 {
     self = [super init];
     if (self)
     {
-        _reachability = reachabilityProtocol;
+        _reachability = reachability;
     }
     return self;
 }
-
 
 - (VSValidationStrategyResult)isObjectValid:(id <VSValidationStrategyDataSource>)object
 {
@@ -39,7 +39,7 @@
         // If not reachable, cache is valid
         return VSValidationStrategyResultValid;
     }
-
+    
     return VSValidationStrategyResultUnknown;
 }
 
