@@ -24,7 +24,6 @@
     "Vastra/*.{h,m}"
   ],
   "dependencies": {
-    "Reachability": []
   },
   "frameworks": "Foundation",
   "requires_arc": true

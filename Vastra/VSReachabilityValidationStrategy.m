@@ -16,8 +16,6 @@
 
 #import "VSReachabilityValidationStrategy.h"
 
-#import <Reachability/Reachability.h>
-
 @implementation VSReachabilityValidationStrategy
 {
     id <VSReachabilityProtocol> _reachability;
@@ -30,6 +28,7 @@
     {
         _reachability = reachabilityProtocol;
     }
+    return self;
 }
 
 
