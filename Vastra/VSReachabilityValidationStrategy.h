@@ -15,6 +15,7 @@
 //
 
 #import "VSValidationStrategy.h"
+#import "VSReachabilityProtocol.h"
 
 /**
  * Reachability validation strategy.
@@ -35,7 +36,7 @@
  * @param host The host to use to check if reachable.
  * @return The initialized instance.
  **/
-- (nonnull id)initWithHost:(NSString * __nonnull)host;
+- (nonnull id)initWithReachabilityProtocol:(id<VSReachabilityProtocol>)reachabilityProtocol;
 
 /** *************************************************** **
  * @name Properties

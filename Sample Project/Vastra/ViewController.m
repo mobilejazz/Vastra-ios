@@ -14,6 +14,8 @@
 #import "VSReachabilityValidationStrategy.h"
 #import "VSTimestampValidationStrategy.h"
 
+#import "DummyReachability.h"
+
 @interface ViewController ()
 
 @end
@@ -24,12 +26,11 @@
 {
     [super viewDidLoad];
     
-    NSString *host = @"www.google.com"; // Valid host
-//    NSString *host = @"asdfasdf"; // Invalid host --> Reachability strategy will return always Valid.
+    //    NSString *host = @"asdfasdf"; // Invalid host --> Reachability strategy will return always Valid.
     
     VSValidationStrategy *defaultStrategy = [[VSValidationStrategy alloc] init];
     VSValidationStrategy *timestampStrategy = [[VSTimestampValidationStrategy alloc] init];
-    VSValidationStrategy *reachabilityStrategy = [[VSReachabilityValidationStrategy alloc] initWithHost:host];
+    VSValidationStrategy *reachabilityStrategy = [[VSReachabilityValidationStrategy alloc] initWithReachabilityProtocol:[[DummyReachability alloc] init]];
     
     VSValidationService *validationService = [[VSValidationService alloc] initWithStrategies:@[reachabilityStrategy,
                                                                                                timestampStrategy,
@@ -48,7 +49,7 @@
         NSLog(@"User failed validation");
     }
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t) (6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if ([validationService isObjectValid:user])
         {
             NSLog(@"After 6 seconds: User did pass validation");

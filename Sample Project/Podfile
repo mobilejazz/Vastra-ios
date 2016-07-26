@@ -4,10 +4,8 @@
 # use_frameworks!
 
 target 'Vastra' do
-  pod 'Reachability', '~> 3.2'
 end
 
 target 'VastraTests' do
-    pod 'Reachability', '~> 3.2'
 end
 
