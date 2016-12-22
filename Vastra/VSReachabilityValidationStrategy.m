@@ -21,7 +21,7 @@
     id<VSReachabilityProtocol> _reachabilityProvider;
 }
 
-- (nonnull id)initWithRechabilityProvider:(nonnull id<VSReachabilityProtocol>)reachabilityProvider
+- (nonnull id)initWithReachabilityProvider:(nonnull id<VSReachabilityProtocol>)reachabilityProvider
 {
     self = [super init];
     if (self)

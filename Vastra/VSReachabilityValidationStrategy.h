@@ -36,6 +36,6 @@
  * @param host The host to use to check if reachable.
  * @return The initialized instance.
  **/
-- (nonnull id)initWithRechabilityProvider:(nonnull id<VSReachabilityProtocol>)reachabilityProvider;
+- (nonnull id)initWithReachabilityProvider:(nonnull id<VSReachabilityProtocol>)reachabilityProvider;
 
 @end
