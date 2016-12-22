@@ -1,6 +1,6 @@
-[![Version](https://cocoapod-badges.herokuapp.com/v/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra) 
-[![Platform](https://cocoapod-badges.herokuapp.com/p/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra) 
-[![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Vastra) 
+[![Version](https://cocoapod-badges.herokuapp.com/v/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra)
+[![Platform](https://cocoapod-badges.herokuapp.com/p/Vastra/badge.png)](http://cocoadocs.org/docsets/Vastra)
+[![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/Vastra)
 
 ![Mobile Jazz Vastra](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-vastra-banner.png)
 
@@ -22,12 +22,13 @@ Create the strategy instances that you want to validate your objects:
 ```objective-c
 // Default validation strategy (always return validity)
 VSValidationStrategy *defaultStrategy = [[VSValidationStrategy alloc] init];
- 
+
 // Timestamp based validation strategy
 VSValidationStrategy *timestampStrategy = [[VSTimestampValidationStrategy alloc] init];
 
-// Reachability validation strategy
-VSValidationStrategy *reachabilityStrategy = [[VSReachabilityValidationStrategy alloc] initWithHost:@"www.google.com"];
+// Reachability validation strategy, uses your custom reachability provider
+id <VSReachabilityProtocol> myReachability = [[MyReachability alloc] init];
+VSValidationStrategy *reachabilityStrategy = [[VSReachabilityValidationStrategy alloc] initWithReachabilityProvider:myReachability];
 ```
 
 Custom strategies can also be created. To do it:
@@ -43,10 +44,10 @@ Custom strategies can also be created. To do it:
 Create a `VSValidationService` instance including the strategies created above.
 
 ```objective-c
-NSArray *strategies =  @[reachabilityStrategy, 
+NSArray *strategies =  @[reachabilityStrategy,
                          timestampStrategy,
                          defaultStrategy];
-                       
+
 VSValidationService *validationService = [[VSValidationService alloc] initWithStrategies:strategies];
 ```
 
@@ -88,7 +89,7 @@ user.name = @"John Doe";
 user.updatedAt = [NSDate date];
 
 // Executing the validation service
-if ([validationService isObjectValid:user]) 
+if ([validationService isObjectValid:user])
   NSLog(@"User did pass validation");
 else
   NSLog(@"User failed validation");
