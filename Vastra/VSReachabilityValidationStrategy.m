@@ -16,57 +16,31 @@
 
 #import "VSReachabilityValidationStrategy.h"
 
-#import <Reachability/Reachability.h>
-
 @implementation VSReachabilityValidationStrategy
 {
-    Reachability *_reachability;
-    
-    BOOL _serviceAvailable;
+    id<VSReachabilityProtocol> _reachabilityProvider;
 }
 
-- (id)initWithHost:(NSString*)host
+- (nonnull id)initWithRechabilityProvider:(nonnull id<VSReachabilityProtocol>)reachabilityProvider
 {
     self = [super init];
     if (self)
     {
-        _host = host;
-        
-        _reachability = [Reachability reachabilityWithHostname:host];
-        [_reachability startNotifier];
-        
-        // is passed in the object parameter
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(vs_reachabilityChanged:)
-                                                     name:kReachabilityChangedNotification
-                                                   object:nil];
-
+        _reachabilityProvider = reachabilityProvider;
     }
     return self;
 }
 
-- (void)dealloc
-{
-    [_reachability stopNotifier];
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:kReachabilityChangedNotification
-                                                  object:_reachability];
-}
 
 - (VSValidationStrategyResult)isObjectValid:(id<VSValidationStrategyDataSource>)object
 {
-    if (![_reachability isReachable] && _serviceAvailable)
+    if ([_reachabilityProvider isReachable])
     {
         // If not reachable, cache is valid
         return VSValidationStrategyResultValid;
     }
     
     return VSValidationStrategyResultUnknown;
-}
-
-- (void)vs_reachabilityChanged:(NSNotification*)notification
-{
-    _serviceAvailable = YES;
 }
 
 @end
