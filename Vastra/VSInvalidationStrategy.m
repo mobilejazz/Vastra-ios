@@ -21,7 +21,9 @@
 - (VSValidationStrategyResult)isObjectValid:(id <VSInvalidationStrategyDataSource> __nonnull)object
 {
     if ([object isObjectInvalid])
+    {
         return VSValidationStrategyResultInvalid;
+    }
     
     return VSValidationStrategyResultUnknown;
 }

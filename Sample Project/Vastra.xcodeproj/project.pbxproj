@@ -171,17 +171,17 @@
 			isa = PBXGroup;
 			children = (
 				D261A9941C2C2A1600D40175 /* Vastra.h */,
+				D261A9811C2C157D00D40175 /* VSValidationService.h */,
+				D261A9821C2C157D00D40175 /* VSValidationService.m */,
+				D261A9831C2C157D00D40175 /* VSValidationStrategy.h */,
+				D261A9841C2C157D00D40175 /* VSValidationStrategy.m */,
 				D2F3C9B21CECC20E0048FEBA /* VSInvalidationStrategy.h */,
+				D2F3C9B31CECC20E0048FEBA /* VSInvalidationStrategy.m */,
 				5251D4DC1E0C25360033DDD7 /* VSReachabilityProtocol.h */,
 				D261A9861C2C157D00D40175 /* VSReachabilityValidationStrategy.h */,
-				D261A9881C2C157D00D40175 /* VSTimestampValidationStrategy.h */,
-				D261A9811C2C157D00D40175 /* VSValidationService.h */,
-				D261A9831C2C157D00D40175 /* VSValidationStrategy.h */,
-				D2F3C9B31CECC20E0048FEBA /* VSInvalidationStrategy.m */,
 				D261A9871C2C157D00D40175 /* VSReachabilityValidationStrategy.m */,
+				D261A9881C2C157D00D40175 /* VSTimestampValidationStrategy.h */,
 				D261A9891C2C157D00D40175 /* VSTimestampValidationStrategy.m */,
-				D261A9821C2C157D00D40175 /* VSValidationService.m */,
-				D261A9841C2C157D00D40175 /* VSValidationStrategy.m */,
 			);
 			name = Vastra;
 			path = ../../Vastra;

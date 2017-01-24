@@ -17,7 +17,7 @@
 #import "VSValidationStrategy.h"
 
 /**
- * Object invalidation strategy data source.
+ * Object invalidation strategy data source. Only one of the two methods must be implemented.
  **/
 @protocol VSInvalidationStrategyDataSource <VSValidationStrategyDataSource>
 

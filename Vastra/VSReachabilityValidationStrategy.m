@@ -18,7 +18,7 @@
 
 @implementation VSReachabilityValidationStrategy
 {
-    id<VSReachabilityProtocol> _reachabilityProvider;
+    id <VSReachabilityProtocol> _reachabilityProvider;
 }
 
 - (nonnull id)initWithReachabilityProvider:(nonnull id<VSReachabilityProtocol>)reachabilityProvider
@@ -34,7 +34,7 @@
 
 - (VSValidationStrategyResult)isObjectValid:(id<VSValidationStrategyDataSource>)object
 {
-    if ([_reachabilityProvider isReachable])
+    if (![_reachabilityProvider isReachable])
     {
         // If not reachable, cache is valid
         return VSValidationStrategyResultValid;
